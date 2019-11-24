@@ -1,0 +1,194 @@
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgb(31, 78, 133)20%, rgb(4, 15, 77)100%);
+    padding: 4px;
+    color: white;
+    overflow: hidden;
+    box-shadow: 0px 7px 60px rgb(56, 54, 54);
+    opacity: 1;
+}
+
+header {
+    padding: 4px;
+
+}
+
+header img {
+
+    width: default;
+    float: left;
+    padding: 3px;
+}
+
+nav ul {
+    float: right;
+    list-style-type: none;
+    margin-right: 20px;
+
+}
+
+nav li {
+    display: inline-block;
+
+}
+
+nav li a {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 12px 14px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    /* border: 1px solid rgba(75, 72, 72, 0.445); */
+
+}
+
+nav li a:hover {
+    color: white;
+    background: #34A9F9;
+    transition: background-color 0.5s ease-in-out;
+}
+
+section {
+    height: 800px;
+    background: linear-gradient(rgba(5, 138, 247, 0.5), rgba(0, 171, 245, 0.5)), url(images/flippers-1836458_1280.jpg) no-repeat center center;
+    background-size: cover;
+
+    background-attachment: scroll;
+    text-align: center;
+    background-blend-mode: multiply;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    z-index: 99;
+}
+
+section span {
+    color: inherit;
+    text-shadow: 0px 1px 1px black;
+}
+
+section h1 {
+    font-size: 3.3em;
+    overflow: hidden;
+    padding-top: 280px;
+    margin-bottom: 10px;
+    display: block;
+    position: inherit;
+
+}
+
+section .tagline {
+    font-size: 1.4em;
+    /* box-shadow: 0px 0px 8px inset; */
+    display: contents;
+    width: 180px;
+    font-style: oblique;
+
+}
+
+
+#section2 {
+    background: rgb(0, 6, 20);
+    display: inline-block;
+    box-shadow: 0px 0px 500px black;
+    width: 100%;
+    margin-top: 0px;
+    height: 900px;
+    z-index: -1;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+#section2 td,
+th {
+
+    display: inline-block;
+    border: 5px transparent solid;
+    word-wrap: break-word;
+    width: 360px;
+    float: left;
+
+
+    margin-left: 40px;
+    border: 4px solid white;
+    padding: 120px 10px;
+    background: white;
+    color: black;
+    box-shadow: 0px 20px 30px rgb(1, 17, 26);
+
+
+}
+
+#section2 th {
+    margin-top: 17px;
+    text-align: center;
+    padding: 10px 10px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: -2px;
+}
+
+#section2 h2 {
+    margin-top: 130px;
+    font-size: 5em;
+
+
+}
+
+aside {
+    height: 700px;
+    display: block;
+    padding: 80px;
+}
+
+aside h2 {
+    font-size: 4em;
+    margin-top: 0px;
+    display: inline-block;
+
+}
+
+footer,
+footer a {
+    background: rgb(20, 20, 20);
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: rgb(231, 227, 227);
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    width: 100%;
+}
+
+footer a {
+    padding: 0;
+    box-shadow: none;
+}
