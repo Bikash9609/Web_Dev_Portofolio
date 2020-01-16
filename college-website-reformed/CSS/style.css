@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins',
+    sans-serif;
+
+}
+
+p {
+  font-family: 'Poppins',
+    sans-serif;
+}
+
+body {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+.navbar {
+  background: #ffffff;
+  height: 86px;
+  box-shadow: 0 2px 20px -2px rgba(0, 0, 0, .2);
+}
+
+.navbar-brand img {
+  width: 70px;
+  padding: 4px;
+  left: 20px;
+}
+
+.navbar-nav li {
+  margin-right: 6px;
+}
+
+.navbar-nav li a {
+  color: rgb(4, 7, 31);
+  font-size: 1em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  font-style: bold;
+  font-family: 'Poppins',
+    sans-serif;
+}
+
+.navbar form i {
+  color: rgb(160, 221, 253);
+}
+
+.navbar form button {
+  border: rgb(160, 221, 253) solid 1px;
+  box-shadow: 1px 2px 1px rgb(209, 237, 252);
+}
+
+.navbar form button:active,
+.navbar form button:hover {
+  background: rgba(160, 220, 253, 0.267) !important;
+  border: 1px solid rgb(160, 221, 253) !important;
+  box-shadow: 0px 0px 10px inset rgb(160, 221, 253);
+  color: white;
+}
+
+
+.navbar-item a:hover {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  border-bottom: 3px solid rgb(160, 221, 253);
+  font-weight: 700;
+}
+
+.navbar li a:hover {
+  color: rgb(150, 148, 148);
+}
+
+.dropdown-menu {
+  background: rgb(247, 247, 247);
+  box-shadow: 0 20px 20px -2px rgba(0, 0, 0, .2);
+}
+
+
+
+/* header */
+
+header {
+  background: linear-gradient(to left, #0f94d11a 5%, rgb(2, 32, 48) 100%),
+    url("https://images.shiksha.com/mediadata/images/1483765107phpKL6FhL.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 253, 253);
+  text-shadow: 0px 0px 100px black;
+  overflow: hidden;
+}
+
+header .row {
+  margin-top: 200px;
+
+}
+
+
+header h1 {
+  font-weight: 300;
+  font-style: bold;
+  font-size: 2.8em;
+  font-family: 'Playfair Display',
+    serif;
+  word-wrap: break-word;
+
+}
+
+header span {
+  padding: 5px 8px;
+  font-weight: 700;
+
+}
+
+
+header button {
+  position: relative;
+  background: linear-gradient(to left, rgb(6, 93, 139), #06a7f1) !important;
+  border: 1px solid #0aa9f8 !important;
+  color: #ffff !important;
+  z-index: 1;
+
+}
+
+header button::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #5ec5f5, #0f6f9b) !important;
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+header button:focus,
+header button:hover::before {
+  opacity: 1;
+}
+
+
+
+/* header login */
+
+header form {
+  padding: 40px;
+  width: 330px;
+  height: 260px;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+  box-shadow: -70px 0px 100px rgb(6, 131, 233);
+  border-radius: 4px;
+  background: linear-gradient(to left, rgb(83, 167, 223), rgb(9, 105, 231));
+}
+
+
+header form input {
+  display: table-cell;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.212);
+  color: rgba(255, 255, 255, 0.897);
+}
+
+header form label {
+  display: table-row;
+}
+
+header form button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+header .header-addmission {
+  width: 230px;
+  height: 45px;
+}
+
+/* header canva */
+@media (max-width: 767.98px) {
+
+  /* navbar small */
+  .navbar-brand img {
+    padding-top: 0px;
+    width: 80px;
+    margin-top: -79px;
+
+  }
+
+  .navbar-brand span{
+    display: none;
+  }
+
+  .navbar {
+    padding: 0px 10px 10px 2px;
+    height: 80px;
+  }
+
+  .navbar-toggler {
+    border-color: rgb(0, 0, 0);
+    margin-top: 20px;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar .collapse {
+    background: rgb(247, 244, 244);
+    border-top: 0px;
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    border: 10px solid white;
+    box-sizing: border-box;
+    margin-right: -7px;
+  }
+
+
+  .navbar-nav li {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.116);
+  }
+
+  .navbar-nav li a {
+    color: rgb(0, 0, 0);
+  }
+
+  /* header small */
+
+  header {
+    height: 700px;
+    background: linear-gradient(to bottom, #01abfada 60%, #07141a 100%),
+      url("../Resources/Images/accomplishment-ceremony-education-graduation-267885.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header form {
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+  }
+}
+
+
+
+/* About */
+
+#about {
+  height: max-content;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  color: rgb(5, 5, 5);
+  background: rgb(255, 255, 255);
+  margin-bottom: 100px;
+  overflow: hidden;
+
+}
+
+#about .row {
+  padding: 20px;
+  padding-top: 20px;
+  /* background: rgba(0, 0, 0, 0.041); */
+}
+
+
+
+#about img {
+  width: 100%;
+  box-shadow: 0px 0px 100px rgb(192, 191, 191);
+  margin-top: 100px;
+  margin-bottom: 10px;
+
+}
+
+#about h2 {
+  padding-left: 10px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 1.5em;
+  padding-bottom: 3px;
+  border-bottom: 2px solid;
+  font-style: bold;
+  color: #46b3e6;
+  background: rgba(6, 92, 139, 0.055);
+
+}
+
+#about span {
+  /* font-size: 0.5em; */
+  font-style: normal;
+  font-variant: small-caps;
+}
+
+#about p {
+  font-size: 1.1em;
+  width: 100%;
+  line-height: 28px;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+
+/* About in-depth */
+
+#about #depthDetails .row {
+  background: rgb(5, 63, 95);
+}
+
+#about #depthDetails .row .col-md-2 {
+  background: linear-gradient(to bottom, #5ec5f5, #0f6f9b);
+  text-align: center;
+  border: 2px solid rgb(5, 63, 95);
+  padding: 5px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 12px;
+}
+
+#about #depthDetails h6 {
+  background: white;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: rgb(22, 22, 22);
+}
+
+i.fas::before {
+  font-size: 30px;
+}
+
+#about #depthDetails .row .col-md-2:hover {
+  background: linear-gradient(to bottom, #5ec5f5, #1599d6);
+
+}
+
+
+/* Gallery  */
+
+#collegeEvents {
+  background: rgb(238, 236, 236);
+  padding: 50px 0px 0px 0px;
+  scroll-behavior: smooth;
+}
+
+
+#collegeEvents .getAdmission {
+  background: #ffffff;
+  height: max-content;
+  margin: 0px 10px 0px 10px;
+  overflow: hidden;
+}
+
+#collegeEvents .admisImage {
+  background: linear-gradient(to left, rgba(5, 31, 46, 0.925) 20%, rgba(160, 220, 253, 0)),
+    url('../Resources/Images/books-2596809_1920.jpg');
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#collegeEvents .admisData {
+  background: linear-gradient(to left, rgba(5, 31, 46, 0.959) 50%, rgba(4, 104, 161, 0) 100%),
+    url('../Resources/Images/books-2596809_1920.jpg');
+  background-attachment: fixed;
+  text-align: left;
+  padding-left: 40px;
+  color: white;
+  width: 100%;
+  overflow: hidden;
+}
+
+#collegeEvents .admisData h3+p {
+  width: 450px;
+  margin-top: 20px;
+}
+
+#collegeEvents .admisData h3 {
+  font-weight: 700;
+  font-size: 2em;
+  margin-top: 100px;
+}
+
+#collegeEvents .admisData p {
+  color: rgba(245, 245, 245, 0.747);
+  font-size: 1.1em;
+}
+
+button {
+  color: white;
+  background: rgba(160, 220, 253, 0.199);
+  border: 2px solid rgb(160, 221, 253);
+  padding: 5px 25px;
+  transition: background 0.6s linear, border 0.6s linear;
+  font-style: bold;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+button:hover,
+active {
+  background: rgba(5, 141, 214, 0.37);
+  border: 2px solid rgb(9, 160, 241);
+}
+
+/* Quick-Links */
+
+#quick-links {
+  height: max-content;
+  width: 100%;
+  margin-top: -2px;
+}
+
+#quick-links .quickLinks {
+  color: white;
+  background: linear-gradient(rgba(5, 31, 46, 0.651), rgba(5, 31, 46, 0.959)),
+    url('../Resources/Images/accomplishment-ceremony-education-graduation-267885.jpg');
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 40px 100px 40px;
+}
+
+#quick-links .quickLinks ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+#quick-links .quickLinks h3 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+#quick-links .quickLinks li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.212);
+  margin-bottom: 10px;
+
+}
+
+#quick-links .quickLinks li a {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+
+
+#quick-links .studentsLogin {
+  background: rgb(4, 29, 43);
+  color: white;
+}
+
+#quick-links .studentsLogin h3 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+#quick-links hr {
+  width: 250px;
+  background: white;
+}
+
+#quick-links .studentsLogin form {
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+#quick-links .studentsLogin input {
+  background: rgb(3, 46, 71);
+  color: rgb(160, 221, 253);
+  border: none;
+}
+
+#quick-links .studentsLogin input:focus {
+  border: 2px solid rgb(160, 221, 253);
+}
+
+
+/* wrapper */
+
+#wrapper {
+  height: max-content;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+
+}
+
+#wrapper h2 {
+  font-size: 1.5em;
+  font-style: bold;
+  font-weight: 700;
+  width: max-content;
+  color: rgb(6, 93, 139);
+  padding: 0px 10px 0px 10px;
+  margin: 0 auto;
+  margin-left: 0;
+  margin-right: 0px;
+  margin-top: 100px;
+  position: relative;
+}
+
+#wrapper h2:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-top: 3px solid rgba(6, 92, 139, 0.267);
+  top: 0;
+  width: 100px;
+  left: 100%;
+  margin-top: 15px;
+}
+
+
+/* committee */
+
+#committee {
+  text-align: center;
+  color: black;
+  margin-top: 40px;
+  padding: 10px;
+  height: max-content;
+  overflow: hidden;
+
+}
+
+#committee .row {
+  padding: 20px;
+}
+
+#committee .row img {
+  width: 110px;
+  margin-top: 0px;
+  border-bottom: 8px groove #5658585b;
+}
+
+#committee .row #top {
+  background: linear-gradient(to top, rgb(255, 255, 255), rgba(160, 220, 253, 0.24));
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+
+#committee #intro {
+  color: rgb(12, 11, 11);
+  margin-bottom: 10px;
+  overflow: auto;
+
+}
+
+#committee h4 {
+  font-size: 1em;
+  font-style: bold;
+  color: #46b3e6;
+  background: rgba(6, 92, 139, 0.055);
+  padding-bottom: 3px;
+  border-bottom: 2px solid;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+#committee h5 {
+  font-size: 0.8em;
+  color: rgb(197, 194, 194);
+}
+
+#committee p {
+  font-size: 0.8rem;
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 150px;
+}
+
+#committee .row .col-md-3 {
+  transition: box-shadow 0.7s linear;
+  padding: 10px;
+  box-shadow: 0px 1px 1px rgb(160, 221, 253);
+}
+
+#committee .row .col-md-3:hover {
+  padding: 10px;
+  box-shadow: 0px 2px 10px rgb(160, 221, 253);
+  padding: 10px;
+}
+
+
+/* Gallery Unused */
+
+/* #gallery {
+  height: 250px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  box-shadow: 0px 0px 300px #01abfada inset;
+  border-right: 12px solid;
+  border-bottom: 12px solid;
+  border-top: 12px solid;
+  box-shadow: 0px 10px 10px black;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+#gallery img {
+  width: 300px;
+} */
