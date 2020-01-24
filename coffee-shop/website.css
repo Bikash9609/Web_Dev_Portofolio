@@ -7,16 +7,6 @@ html {
     scroll-behavior: smooth;
 }
 
-h1 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 4em;
-}
-
-p {
-    font-family: 'Kalam', cursive;
-    font-size: 1.2em;
-
-}
 
 
 .navbar {
@@ -63,6 +53,7 @@ header {
     filter: drop-shadow(2);
     height: 600px;
     /* box-shadow: 0px 0p 100px inset; */
+    position: relative;
 }
 
 
@@ -82,6 +73,15 @@ header .intro {
 
 header h1 {
     font-size: 3.5em;
+    font-family: 'Permanent Marker',
+        cursive;
+
+}
+
+header p {
+    font-family: 'Kalam',
+        cursive;
+    font-size: 1.2em;
 }
 
 header .form-group {
@@ -92,13 +92,14 @@ header .form-group {
     border-radius: 10px;
     width: 350px;
     height: 300px;
-    box-shadow: -70px 0px 100px black;
+    box-shadow: 20px 0px 100px black;
+    transition: box-shadow 0.5s linear;
 
 }
 
 header .form-group:hover {
     box-shadow: 0px 0px 10px black;
-    transition: box-shadow 0.7s ease-in-out;
+
 }
 
 header .form-group small {
@@ -126,11 +127,56 @@ button[type="button"]:hover {
 
 }
 
+/* Section coffee-intro */
+#coffee-intro {
+    height: 100px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#coffee-intro .row {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(8, 8, 8, 0.5));
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 200px;
+    position: absolute;
+    overflow: auto;
+}
+
+#coffee-intro .row>.col-xs-4 {
+    width: 400px;
+    height: max-content;
+    background: linear-gradient(to bottom, rgba(247, 163, 6, 0.63), rgba(2, 2, 2, 0));
+    padding: 30px;
+    padding-bottom: 100px;
+    margin: 2px;
+}
+
+#coffee-intro h3 {
+    margin-bottom: 13px;
+    color: rgb(252, 252, 252);
+    font-size: 1.6em;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+}
+
+#coffee-intro p {
+    color: rgba(250, 249, 248, 0.925);
+    font-weight: 600;
+
+}
+
+
+
 
 
 section {
-    position: absolute;
-    background: linear-gradient(rgb(255, 255, 255), rgba(253, 207, 2, 0.473)), url(https://cdn.pixabay.com/photo/2018/03/09/22/19/wood-3212803__340.jpg);
+    position: relative;
+    background: linear-gradient(rgb(19, 18, 18), rgba(0, 0, 0, 0.884)), url(https://cdn.pixabay.com/photo/2018/03/09/22/19/wood-3212803__340.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -139,48 +185,51 @@ section {
     min-width: 100%;
     box-shadow: 0px 0px 300px rgba(51, 2, 2, 0.192) inset;
     color: white;
-    border-top: 30px solid orange;
-   
+    overflow: hidden;
+
 }
 
-section .topic {
-    display: block;
-    text-align: center;
-    padding: 40px;
-    font-size: 3.5em;
-    text-shadow: 2px 5px 10px #1a1818;
-    /* background: rgba(240, 178, 6, 0); */
+section .topic h1 {
+    text-align: left;
+    padding: 20px;
+    font-size: 24px;
     color: orange;
-    width: max-content;
-    margin: 0 auto;
-    margin-top: 3%;
+    width: 600px;
+    border-radius: 0px 40px 40px 0px;
+    margin-top: 6%;
+    font-weight: 700;
+    overflow: hidden;
+}
 
+
+section .topic h1:after {
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 2px solid orange;
 }
 
 section .row {
     margin-top: 50px;
     padding: 50px;
-    background: rgba(0, 0, 0, 0.795);
-    border-top: 30px solid orange;
-
 
 }
 
 section .imageLeft {
 
-    size: 200px;
-    width: 400px;
+    width: 300px;
     word-wrap: break-word;
     box-sizing: border-box;
 
 }
 
 section .imageLeft img {
-    width: 600px;
-    height: 400px;
-    margin-bottom: 6px;    
+    width: 400px;
+    margin-bottom: 6px;
 }
 
-section .cof-names{
-    
-}
+section .cof-names {}
